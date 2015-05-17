@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'devise'
+gem 'will_paginate', '~> 3.0.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'

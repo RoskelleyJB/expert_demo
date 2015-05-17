@@ -1,14 +1,15 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
+.container {
 	margin: 0;
 	padding: 0;
 	background-color: #CCCCCC;
+	font-family: 'Indie Flower';
 }
 a {
 	text-decoration: none;
-	color: white;
+	// color: black;
 }
 .nav ul {
 	font-size: 24px;
