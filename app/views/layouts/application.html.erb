@@ -8,6 +8,30 @@
 </head>
 <body>
 
+  <% if current_user %>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+  <% else %>
+    <%= link_to('Sign In', new_user_session_path) %> |
+    <%= link_to('Register', new_user_registration_path) %>
+  <% end %>
+  <div class="nav">
+		<ul>
+			<li><a href="http://google.com">About Me</a></li>
+			<li><a href="http://google.com">Why NYC?</a></li>
+			<li><a href="http://google.com">Getting There</a></li>
+			<li><a href="http://google.com">Getting Around</a></li>
+			<li><a href="http://google.com">Where to Stay</a></li>
+		</ul>
+  </div>
+
+  <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% end %>  
+    
+  <% if alert %>
+    <p class="alert"><%= alert %></p>
+  <% end %> 
+
 <%= yield %>
 
 </body>
